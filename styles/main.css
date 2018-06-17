@@ -8,15 +8,21 @@
   width: 100%;
   object-fit:cover;
   object-position:center;
-  height: 36rem !important;
+  height: 35.3rem !important;
 }
 
 p {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: .8rem;
 }
 
 nav {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #F97300;
+}
+
+.navbar{
+  color: #F97300;
 }
 
 h1 {
@@ -24,10 +30,32 @@ h1 {
   text-align: center;
   margin: auto;
   border: auto;
-  padding: 15px 0px 15px 0px;
+  padding: 1rem 0rem 1.7rem 0rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  margin: auto;
+  border: auto;
+  padding: 1rem 0rem 2.1rem 0rem;
   font-weight: bold;
 }
 
-footer p {
-  font-size: .8rem;
+ul {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  list-style-type: square;
 }
+
+footer p {
+  font-size: .7rem;
+  margin-bottom:0;
+}
+
+section {
+  padding-bottom: 2.2rem;
+  padding-top: 1rem;
+}
+
