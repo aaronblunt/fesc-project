@@ -1,0 +1,31 @@
+/*
+Error: Invalid CSS after "": expected selector or at-rule, was "{\rtf1\ansi\ans..."
+        on line 1 of /Users/aaronblunt/Desktop/foundations/fesc-project/styles/new-main.scss
+
+1: {\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+2: {\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+3: {\colortbl;\red255\green255\blue255;}
+4: \margl1440\margr1440\vieww10800\viewh8400\viewkind0
+5: \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+6: 
+
+Backtrace:
+/Users/aaronblunt/Desktop/foundations/fesc-project/styles/new-main.scss:1
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:42:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `load'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"\": expected selector or at-rule, was \"{\rtf1\ansi\ans...\"\A         on line 1 of /Users/aaronblunt/Desktop/foundations/fesc-project/styles/new-main.scss\A \A 1: {\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170\A 2: {\fonttbl\f0\fswiss\fcharset0 Helvetica;}\A 3: {\colortbl;\red255\green255\blue255;}\A 4: \margl1440\margr1440\vieww10800\viewh8400\viewkind0\A 5: \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\A 6: "; }
