@@ -1,7 +1,59 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-\margl1440\margr1440\vieww10800\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+* {
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-\f0\fs24 \cf0 m}
+.carousel-inner img {
+  width: 100%;
+  object-fit:cover;
+  object-position:center;
+  height: 35.3rem !important;
+}
+
+p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: .8rem;
+}
+
+nav {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #F97300;
+}
+
+.navbar{
+  color: #F97300;
+}
+
+h1 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  margin: auto;
+  padding: 1rem 0rem 1.7rem 0rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  margin: auto;
+  padding: 1rem 0rem 2.1rem 0rem;
+  font-weight: bold;
+}
+
+ul {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  list-style-type: square;
+}
+
+footer p {
+  font-size: .7rem;
+  margin-bottom:0;
+}
+
+section {
+  padding-bottom: 2.2rem;
+  padding-top: 1rem;
+}
+
