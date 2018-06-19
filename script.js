@@ -50,3 +50,12 @@ function BarChart1() {
         var chart = new google.charts.Bar(document.getElementById('BarChart1'));
         chart.draw(data, options);
       }
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    message: 'people!',
+    example: ['one', 'two', 'three']
+  }
+})
+
