@@ -59,3 +59,48 @@ var app = new Vue({
   }
 })
 
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(getData);
+
+      function drawBasic(freshData) {
+        freshData.unshift(["Year", "Billion BTUs"])
+
+        var data = google.visualization.arrayToDataTable(freshData);
+
+        var options = {
+          title: 'Energy Production in Florida',
+          chartArea: {width: '50%'},
+          hAxis: {
+            title: 'BTUs',
+            minValue: 0
+          }
+        };
+
+        var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+
+        chart.draw(data, options);
+      }
+
+	
+      let testData
+      function getData(){
+        // Create a new request object
+        let request = new XMLHttpRequest()
+        // TODO: URL to contact goes here
+        let requestUrl = "https://api.eia.gov/series/?api_key= f8003b16bf5d7ca0b79a81f17ec74cfe&series_id=SEDS.REPRB.FL.A"
+        // Open a connection
+        request.open('GET', requestUrl, true)
+        // Callback for when the request completes
+        request.onload = function(){
+ 	let theActualData = JSON.parse(request.response).series[0].data
+
+	drawBasic(theActualData)
+
+        }
+        // Callback for when there's an error
+        request.error = function(err){
+          console.log("error is: ", err)
+        }
+        // Send the request to the specified URL
+        request.send()
+      }
